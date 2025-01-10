@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maitri | Incubation Nepal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicons/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <style>
+      body {
+        font-family: Raleway, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        line-height: 1.6;
+      }
+
+      /* Header Section */
+      header {
+    background-color: #FFD700;
+    padding: 20px 40px; /* Increased horizontal padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure full width */
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 40px; /* Increased gap between menu items */
+    margin-left: auto; /* Push nav items to the right */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 16px; /* Explicit font size */
+    padding: 8px 16px; /* Add padding around links */
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav a {
+        padding: 5px 10px;
+    }
+}
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .hero img {
+        max-width: 100%;
+        height: auto;
+        flex: 1;
+      }
+
+      .hero .content {
+        flex: 1;
+        margin: 20px;
+        text-align: center;
+      }
+
+      .hero button {
+        padding: 10px 20px;
+        background-color: #FFD700;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .hero button:hover {
+        background-color: #ffcc00;
+      }
+
+      /* Responsive Grid for Sections */
+      .section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .section img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #FFD700;
+        color: black;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Responsive Adjustments */
+      @media screen and (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .hero img {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <img src="assets/img/logos/logo.png" alt="Maitri Logo">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#events">Events</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="hero" style="padding: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px; border: 5px solid #FFD700; border-radius: 15px; background-color: #f9f9f9;">
+    <!-- Left Section: Image -->
+    <div class="hero-image" style="flex: 1; max-width: 50%; text-align: center;">
+      <img src="assets/img/Hero/man_watering.png" alt="Hero Image" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    </div>
+    
+    <!-- Right Section: Text and Button -->
+    <div class="hero-text" style="flex: 1; max-width: 50%; text-align: left; padding: 20px;">
+      <h1 style="font-size: 42px; font-weight: bold; color: #FFD700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+        Welcome to Maitri
+      </h1>
+      <p style="font-size: 20px; color: #124838; font-weight: 500; line-height: 1.8; margin-bottom: 20px;">
+        <strong>The Maitri: Where Kindness and Community Thrive</strong>—A place where every act of kindness fosters a deeper bond with the world around us.
+      </p>
+      <button style="padding: 15px 30px; background-color: #FFD700; color: white; border: none; border-radius: 8px; font-size: 20px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease-in-out; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        Explore More
+      </button>
+    </div>
+  </section>
+  <!-- Hero Section Ends -->
+  
+
+<!-- Slider Container Section -->
+<section id="image-slider" style="padding: 40px 20px; background-color: #f9f9f9; text-align: center;">
+    <h2 style="font-size: 28px; font-weight: bold; color: #FFD700; margin-bottom: 20px;">Our Gallery</h2>
+    <div class="slider-container" style="overflow: hidden; width: 100%; margin: 0 auto; position: relative;">
+      <div class="slider-track" id="sliderTrack" style="display: flex; transition: transform 0.5s ease-in-out;">
+        <!-- Slider Items -->
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/10.png" alt="Image 1" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/9.png" alt="Image 2" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/11.png" alt="Image 3" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/12.png" alt="Image 4" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/10.png" alt="Image 5" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/11.png" alt="Image 6" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/12.png" alt="Image 7" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/13.png" alt="Image 8" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/14.png" alt="Image 9" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="slider-item" style="min-width: calc(100% / 3); padding: 10px; box-sizing: border-box;">
+          <img src="assets/img/team/15.png" alt="Image 10" style="width: 100%; border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const sliderTrack = document.getElementById('sliderTrack');
+    const totalSlides = sliderTrack.children.length;
+    const slideWidth = sliderTrack.children[0].offsetWidth;
+    const visibleSlides = 3; // Number of slides visible at once
+    let currentPosition = 0;
+  
+    function slideImages() {
+      currentPosition += slideWidth;
+  
+      if (currentPosition >= slideWidth * totalSlides) {
+        currentPosition = 0; // Loop back to the start
+      }
+  
+      sliderTrack.style.transform = `translateX(-${currentPosition}px)`;
+    }
+  
+    setInterval(slideImages, 1500); // Slide every 1.5 seconds
+  </script>
+  
+      
+
+    <!-- About Us Section -->
+    <section id="about" style="padding: 40px 20px; background-color: #f9f9f9; text-align: center;">
+        <!-- About Us Content -->
+        <div>
+          <!-- About Us Heading -->
+          <h1 class="section-heading" style="color: #FFD700; font-size: 36px; font-weight: bold; margin-bottom: 20px;">
+            About Us
+          </h1>
+      
+          <!-- About Us Description -->
+          <h4 class="justify" style="color: #124838; font-size: 18px; line-height: 1.8; text-align: center; margin-bottom: 40px;">
+            "Maitri is a non-profit organization operating from Dharan Sub-Metropolitan City. It is dedicated to enhancing livelihoods through economic empowerment, skill development, and youth engagement. By connecting skilled professionals with communities in need, Maitri delivers transformative training programs and resources that inspire sustainable growth and contribute to a better future."
+          </h4>
+      
+          <!-- Team Section -->
+          <h1 class="section-heading" style="color: #FFD700; font-size: 32px; font-weight: bold; margin-bottom: 30px;">
+            Our Team
+          </h1>
+          <div class="row mb-13 w-lg-75 mb-lg-5 mx-auto gy-2 gy-lg-5 h-100">
+            <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+              <div class="position-relative w-50 mx-auto mb-2">
+                <img class="w-100 team-hero-image" src="assets/img/team/team/6.png" alt="Denesh Rai" style="border-radius: 10px;">
+              </div>
+              <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Denesh Rai</h3>
+              <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">President</h5>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+              <div class="position-relative w-50 mx-auto mb-2">
+                <img class="w-100 team-hero-image" src="assets/img/team/team/5.png" alt="Swastika Bishwakarma" style="border-radius: 10px;">
+              </div>
+              <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Swastika Bishwakarma</h3>
+              <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Operation Manager</h5>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+              <div class="position-relative w-50 mx-auto mb-2">
+                <img class="w-100 team-hero-image" src="assets/img/team/team/4.png" alt="Dipisha Shakya" style="border-radius: 10px;">
+              </div>
+              <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Dipisha Shakya</h3>
+              <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Social Media & Marketing Manager</h5>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+              <div class="position-relative w-50 mx-auto mb-2">
+                <img class="w-100 team-hero-image" src="assets/img/team/team/3.png" alt="Sifa Shrestha" style="border-radius: 10px;">
+              </div>
+              <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Sifa Shrestha</h3>
+              <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Inventory & Logistics Manager</h5>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+              <div class="position-relative w-50 mx-auto mb-2">
+                <img class="w-100 team-hero-image" src="assets/img/team/team/2.png" alt="Sushmita Baraily" style="border-radius: 10px;">
+              </div>
+              <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Sushmita Baraily</h3>
+              <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Finance Manager</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mission-vision" style="padding: 40px 20px; background-color: #f9f9f9;">
+        <!-- Mission Section -->
+        <div class="section-container" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 60px;">
+          <!-- Mission Image -->
+          <div class="section" style="flex: 1; text-align: center;">
+            <img src="assets/img/team/team/mission.png" alt="Mission Image" style="max-width: 80%; border-radius: 10px; margin-bottom: 10px;"> <!-- Replace with your image URL -->
+          </div>
+          <!-- Mission Text -->
+          <div class="section" style="flex: 1; text-align: left;">
+            <h2 class="section-heading" style="color: #FFD700; font-size: 32px; font-weight: bold; margin-bottom: 20px;">Our Mission</h2>
+            <h4 class="justify" style="color: #124838; font-size: 18px; line-height: 1.8;">
+              "Fostering economic development through youth engagement and professional collaboration."
+            </h4>
+          </div>
+        </div>
+      
+        <!-- Vision Section -->
+        <div class="section-container" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 60px;">
+          <!-- Vision Image -->
+          <div class="section" style="flex: 1; text-align: center;">
+            <img src="assets/img/team/team/vission.png" alt="Vision Image" style="max-width: 80%; border-radius: 10px; margin-bottom: 10px;"> <!-- Replace with your image URL -->
+          </div>
+          <!-- Vision Text -->
+          <div class="section" style="flex: 1; text-align: left;">
+            <h1 class="section-heading" style="color: #FFD700; font-size: 32px; font-weight: bold; margin-bottom: 20px;">Our Vision</h1>
+            <h4 class="justify" style="color: #124838; font-size: 18px; line-height: 1.8;">
+              "Leading sustainable growth by empowering youth and strengthening community ties."
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!---target custoemr-->
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Section</title>
+    <style>
+        /* Image Section */
+        .custom-image-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            border: 2px solid #000; /* Adding a border to the section */
+            outline: 2px solid #FFD700; /* Outline border in yellow */
+        }
+
+        /* Image Container */
+        .custom-image-container {
+            text-align: center;
+            width: 30%;
+        }
+
+        .custom-image-container img {
+            width: 100%;
+            max-width: 300px; /* Adjust the width of images */
+            height: auto;
+        }
+
+        /* Text Below Images */
+        .custom-image-text {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #124838; /* Text color for description in green */
+        }
+
+        /* Heading Style */
+        .custom-section-heading {
+            background-color: #FFD700; /* Yellow background for the heading */
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Description Text */
+        .custom-section-description {
+            color: #124838; /* Green color for the description text */
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Paragraph Under Image Text */
+        .custom-image-paragraph {
+            font-size: 14px;
+            color: #124838;
+            margin-top: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading Section -->
+    <h1 style="color: #FFD700; font-size: 36px; font-weight: bold; margin-bottom: 20px; text-align: center;">
+        Target customer
+    </h1>
+
+      
+
+    <!-- Image Section -->
+    <div class="custom-image-section">
+        <div class="custom-image-container">
+            <img src="assets/img/Hero/7.png" alt="Image 1">
+            <p class="custom-image-text">Aspiring Social Entreprenurs </p>
+            
+        </div>
+        <div class="custom-image-container">
+            <img src="assets/img/Hero/8.png" alt="Image 2">
+            <p class="custom-image-text">Existing Businesses</p>
+            
+        </div>
+        <div class="custom-image-container">
+            <img src="assets/img/Hero/9.png" alt="Image 3">
+            <p class="custom-image-text">New Startup</p>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+<!---pro-->
+<style>
+    /* Section Heading */
+    .projects-section-heading {
+        text-align: center;
+        color: #FFD700; /* Gold color for the heading */
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    /* Testimonial Section */
+    .projects-testimonial-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    }
+
+    .projects-testimonial {
+        width: 30%;
+        text-align: center;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .projects-testimonial:hover {
+        transform: translateY(-10px); /* Hover effect to lift the testimonial */
+    }
+
+    .projects-testimonial img {
+        width: 100%;
+        max-width: 200px; /* Set a maximum width for the image */
+        height: auto;
+        border-radius: 50%; /* Make the image circular */
+        margin-bottom: 15px;
+    }
+
+    .projects-testimonial h3 {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #124838; /* Green color for the heading */
+        margin-bottom: 15px;
+    }
+
+    .projects-testimonial p {
+        font-size: 14px;
+        color: #333; /* Dark gray color for text */
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .projects-testimonial {
+            width: 45%; /* Adjust for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .projects-testimonial {
+            width: 100%; /* Stack for very small screens */
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Section Heading -->
+<h1 class="projects-section-heading">Our Projects</h1>
+
+<!-- Testimonial Section -->
+<div class="projects-testimonial-section">
+    
+    <!-- Testimonial 1 -->
+    <div class="projects-testimonial">
+        <img src="assets/img/team/team/9.png" alt="Testimonial 1"> <!-- Replace with image URL -->
+        <h3>Knots n Crochet: From Hobby to Thriving Business</h3>
+        <p>What started as a hobby for Sifa Shrestha has now grown into Knots n Crochet, a successful business known for its handmade, eco-friendly crochet creations. From keychains to home décor, her products celebrate sustainability and craftsmanship. With guidance from Maitri, Sifa improved her branding, marketing, and operations that helped turn her passion into a thriving business. Today, Knots n Crochet inspires others with its commitment to sustainable gifting and the timeless charm of handmade crafts.</p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="projects-testimonial">
+        <img src="assets/img/team/team/7.png" alt="Testimonial 2"> <!-- Replace with image URL -->
+        <h3>Kaizen Cafe</h3>
+        <p>Kaizen Cafe, founded by Mr. Bishawdeep Limbu in Vijayapur, Dharan, started in the beginning of 2081 with less than 10 lakh rupees. With a background in hospitality while working abroad, Mr. Limbu worked with Maitri Incubation Nepal to improve his marketing and resource strategies. The cafe quickly became successful due to its limited menu, cozy vibe, and hospitality, attracting many loyal customers. Today, Kaizen Cafe is thriving, showing that success is possible even with limited investment.</p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="projects-testimonial">
+        <img src="assets/img/team/team/8.png" alt="Testimonial 3"> <!-- Replace with image URL -->
+        <h3>Glam Rental Studio</h3>
+        <p>Founded by Bina Rai in November 2024, Glam Rental Studio emerged from her passion for fashion and a vision to address the growing demand for fast, sustainable, and affordable fashion. By providing traditional and ethnic clothes for women on rent, Glam Rental offers an affordable solution to fast fashion while supporting the local economy. With help from Maitri Incubation Nepal, the studio is becoming a go-to destination for stylish and sustainable fashion.</p>
+    </div>
+    
+</div>
+
+</body>
+<!----newwwwwww-->
+<style>
+    /* General Body Styling */
+    body.unique-body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+
+    /* Slider Heading */
+    h1.unique-slider-heading {
+        text-align: center;
+        color: #ffda91;
+        margin: 20px 0;
+    }
+
+    /* Slider Container */
+    .unique-slider-container {
+        width: 80%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Slider Styling */
+    .unique-slider {
+        display: flex;
+        gap: 20px;
+        animation: unique-slide-animation 6s infinite linear;
+    }
+
+    /* Individual Slide */
+    .unique-slide {
+        flex: 0 0 calc(33.33% - 15px); /* Display 3 slides at once */
+        border: 2px solid #ffda91;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .unique-slide img {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .unique-slide p {
+        text-align: justify;
+        color: #124838;
+        font-size: 14px;
+    }
+
+    .unique-slide h3 {
+        margin: 10px 0;
+        color: #124838;
+    }
+
+    /* Slide Animation */
+    @keyframes unique-slide-animation {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-33.33%); }
+        50% { transform: translateX(-66.66%); }
+        75% { transform: translateX(-100%); }
+        100% { transform: translateX(0); }
+    }
+</style>
+</head>
+<body class="unique-body">
+<h1 class="unique-slider-heading">Upcoming Projects</h1>
+<div class="unique-slider-container">
+    <div class="unique-slider">
+        <!-- Slide 1 -->
+        <div class="unique-slide">
+            <img src="assets/img/team/team/19.png" alt="Project 1">
+            <h3>Project 1: Tofu Business</h3>
+            <p>"Supporting a local beneficiary in Dharan to expand her tofu business with supply chain management, social media presence, and workshops to promote tofu's health benefits."</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="unique-slide">
+            <img src="assets/img/team/team/20.png" alt="Project 2">
+            <h3>Project 2: The Papad Project</h3>
+            <p>"A gluten-free papad production initiative empowering women with entrepreneurship and promoting locally sourced grains and lentils."</p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="unique-slide">
+            <img src="assets/img/team/team/21.png" alt="Project 3">
+            <h3>Project 3: Ribbon Flowers</h3>
+            <p>"Eco-friendly ribbon flowers promoting sustainability, creativity, and community empowerment with reusable materials."</p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="unique-slide">
+            <img src="assets/img/team/team/22.png" alt="Project 4">
+            <h3>Project 4: Spicy Jar</h3>
+            <p>""</p>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="unique-slide">
+            <img src="assets/img/team/team/23.png" alt="Project 5">
+            <h3>Yours could be next</h3>
+            <p>""</p>
+        </div>
+    </div>
+</div>
+</body>
+
+
+<!---sponser -->
+<style>
+    /* General Body Styling */
+    body.unique-body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+
+    /* Custom Section Heading */
+    h1.unique-section-heading {
+        text-align: center;
+        color: #FFD700; /* Yellow color */
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Sponsors Container */
+    .unique-sponsors-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    /* Individual Sponsor */
+    .unique-sponsor {
+        width: 200px;
+        height: 250px;
+        text-align: center;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid #FFD700;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .unique-sponsor img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .unique-sponsor-title {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #124838;
+    }
+
+    .unique-sponsor:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</head>
+<body class="unique-body">
+<h1 class="unique-section-heading">Our Sponsors</h1>
+<div class="unique-sponsors-container">
+    <!-- Sponsor 1 -->
+    <div class="unique-sponsor">
+        <img src="assets/img/Hero/16.png" alt="Sponsor 1">
+        <div class="unique-sponsor-title">PLC</div>
+    </div>
+    
+    <!-- Sponsor 2 -->
+    <div class="unique-sponsor">
+        <img src="assets/img/Hero/17.png" alt="Sponsor 2">
+        <div class="unique-sponsor-title">EDNEP</div>
+    </div>
+    
+    <!-- Sponsor 3 -->
+    <div class="unique-sponsor">
+        <img src="assets/img/Hero/18.png" alt="Sponsor 3">
+        <div class="unique-sponsor-title">Ikima</div>
+    </div>
+</div>
+</body>
+
+<!---last section-->
+<div style="background-color: white; padding: 40px; text-align: center; max-width: 900px; margin: 0 auto; border-radius: 15px; box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); transition: all 0.3s ease-in-out;">
+    <h2 style="color: #FFD700; font-size: 36px; margin-bottom: 30px; font-family: 'Arial', sans-serif; font-weight: bold;">FAQs: Business Incubation Center in Dharan</h2>
+    
+    <div style="text-align: left; color: #124838; font-family: 'Arial', sans-serif;">
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">1. What is the main focus of the Business Incubation Center in Dharan?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">The center primarily supports startups and entrepreneurs by providing mentorship, business consulting services, and content creation expertise.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">2. Who can benefit from the services provided by the incubation center?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">The services are open to startups, small businesses, and individuals seeking guidance in growing their business or refining their entrepreneurial skills.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">3. What types of mentorship programs are available?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">The mentorship programs cover various areas such as business strategy, market analysis, financial planning, branding, and digital marketing.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">4. Does the center offer office spaces or co-working facilities?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">Yes, we provide affordable co-working spaces and shared office facilities to foster a collaborative and innovative work environment.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">5. Can startups receive financial support through the incubation center?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">While we don't provide direct funding, we assist in connecting startups with potential investors, venture capitalists, and grant opportunities.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">6. What kind of business consulting services do you offer?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">We offer expert advice on business planning, market entry strategies, operational optimization, and growth scaling.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">7. How does the content creation service help startups?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">Our content creation team helps startups build a strong online presence through engaging content, social media strategies, and professional branding materials.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">8. Is there a membership fee or application process to join the incubation center?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">Yes, we have a simple application process. Depending on the program or services you choose, there may be a membership fee or service charges.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">9. Are there any networking events or workshops hosted by the center?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">Absolutely! We regularly host networking events, workshops, and seminars to help entrepreneurs connect and learn from industry experts.</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 12px; cursor: pointer; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#ff9f00'" onmouseout="this.style.color='#FFD700'">10. How can I get started or learn more about the incubation center?</h3>
+            <p style="font-size: 16px; line-height: 1.6;">You can visit our office in Dharan. The address is Dharan, Putali Line, above Laxmi Bank.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Section -->
+<div style="background-color: white; padding: 40px; text-align: center; max-width: 900px; margin: 50px auto 0 auto; border-radius: 15px; box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); transition: all 0.3s ease-in-out;">
+    <h2 style="color: #FFD700; font-size: 36px; margin-bottom: 20px; font-family: 'Arial', sans-serif; font-weight: bold;">Contact Us</h2>
+    <p style="color: #124838; font-size: 18px; margin-bottom: 40px; font-family: 'Arial', sans-serif;">We would love to hear from you. Feel free to contact us for any inquiries or support.</p>
+
+    <div style="margin-bottom: 30px;">
+        <h4 style="color: #FFD700; font-size: 22px; margin-bottom: 10px; font-family: 'Arial', sans-serif;">Physical Address:</h4>
+        <p style="color: #124838; font-size: 18px;">Dharan Metropolitan City - 8, Sunsari</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h4 style="color: #FFD700; font-size: 22px; margin-bottom: 10px; font-family: 'Arial', sans-serif;">Contact Us on Instagram:</h4>
+        <p style="color: #124838; font-size: 18px;">
+            <a href="https://www.instagram.com/themaitrinepal" target="_blank" style="text-decoration: none; color: #124838; font-size: 18px; font-weight: bold; transition: color 0.3s ease;">
+                <img src="assets/img/Hero/20.png" alt="Instagram" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> 
+                @themaitrinepal
+            </a>
+        </p>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <h4 style="color: #FFD700; font-size: 22px; margin-bottom: 10px; font-family: 'Arial', sans-serif;">Mail Us:</h4>
+        <button style="background-color: #FFD700; border: none; color: white; padding: 15px 25px; font-size: 18px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">
+            <a href="mailto:shoujansapkota1@email.com" style="text-decoration: none; color: white;">Mail Us</a>
+        </button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Maitri Incubation Nepal. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
